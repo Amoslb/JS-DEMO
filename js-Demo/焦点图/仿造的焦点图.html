@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>焦点图</title>
+<head>
+  <script type="text/javascript">
+window.onload=function(){
+  var $=function(i){return document.getElementById(i);}
+   var focusimg=$("focusimg");
+  var imgs=$("imgs");
+  var focus1=$("focus1");
+  var spans=focus1.getElementsByTagName("span");
+  var index;
+var currentIndex;
+  for(var i=0;i<5;i++){
+  spans[i].index=i;
+  spans[i].onclick=function(){
+    for(var j=0;j<spans.length;j++){
+        spans[j].style.background="url(images/dot.png)";
+        }
+        this.style.background="url(images/dotActive.png)";
+         currentIndex=this.index;
+    if(-[1,]){
+
+        imgs.firstElementChild.firstElementChild.src="images/"+(this.index+1)+".jpg"; 
+        imgs.firstElementChild.href=index+1+".html"; 
+        }else{
+        imgs.firstChild.firstChild.src="images/"+(this.index+1)+".jpg";
+        imgs.firstChild.href=this.index+1+".jpg";   
+          }
+     
+    };  
+  }
+
+
+  /*定时轮播*/
+  var k=1;
+setInterval(function(){
+for(var j=0;j<spans.length;j++){
+        spans[j].style.background="url(images/dot.png)";
+    }
+    if(currentIndex!=undefined){
+     k=currentIndex;
+     currentIndex=undefined;
+    }
+
+spans[k].style.background="url(images/dotActive.png)";
+if(-[1,]){
+      imgs.firstElementChild.firstElementChild.src="images/"+(k+1)+".jpg";
+      imgs.firstElementChild.href=k+1+".html";
+    }else{
+      imgs.firstChild.firstChild.src="images/"+(k+1)+".jpg";
+      imgs.firstChild.href=k+1+".html";
+      }
+       if(k>=4){      
+      k=-1;
+      }
+      k++;
+
+}, 4000);
+
+  }
+
+
+
+  </script>
+<style>
+#focusimg{
+  border:1px solid #090;
+  position:relative;
+  width:600px;
+  left:50%;
+  margin-left:-300px;
+}
+
+#imgs{
+  text-align:center;
+}
+
+#imgs img{
+  vertical-align:top;
+  border:none;
+}
+
+#focus1{
+  text-align:center;
+  position:absolute;
+  top:350px;
+  left:230px;
+  
+
+}
+
+#focus1 span{
+  display:inline-block;
+  _display:block;
+  _float:left;
+  width:16px;
+  height:16px;
+  _overflow:hidden;
+  background:url(images/dot.png) no-repeat;
+  margin-right:10px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="focusimg">
+   <div id="imgs">
+      <a href="1.html">
+        <img src="images/1.jpg">
+      </a>
+   </div>
+   <div id="focus1">
+     <span class="s1" style="background:url(images/dotActive.png);"></span>
+     <span class="s2"></span>
+     <span class="s3"></span>
+     <span class="s4"></span>
+     <span class="s5"></span>
+   </div>
+</div>
+</body>
+</html>

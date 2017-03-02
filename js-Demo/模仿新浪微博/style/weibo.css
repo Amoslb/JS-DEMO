@@ -1,0 +1,50 @@
+html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,iframe,textarea,input,button,p,strong,b,a,span,del,pre,table,tr,th,td{margin:0; padding:0; -webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul,dl,ol{list-style:none;}
+img{border:0 none;}
+h1,h2,h3,h4,h5,h6,em,del{font-style:normal; font-weight:normal; font-size:100%; -webkit-text-size-adjust:none;}
+.cl{zoom:1;}
+.cl:after{display:block;  height:0;  clear:both;  visibility:hidden;  overflow:hidden;  content:'.';}
+
+body{color:#333; font:12px/1.5 Song; background:url(../images/bg.jpg) #0052b8 no-repeat center top;}
+textarea,input{outline:none;}
+#main{margin:30px auto; padding:10px;  width:800px;  border-radius:5px;  background:#eee;}
+#main #content,#main #sideBar{display:inline; float:left;}
+#main #content{width:500px;}
+	#content{padding-top:10px; background:#fff;}
+	#content form h2{font:400 18px/1.5 Microsoft YaHei; font-weight:400;}
+	#content form{padding:0 20px 15px;}
+	#userName,#conBox{padding:3px 5px; border:1px solid #d0d0d0; font:14px/1.5 arial; color:#777;}
+	#userName.active,#conBox.active{border:1px solid #7abb2c;}
+	#userName{height:20px;}
+	#conBox{width:448px; height:65px; resize:none; }
+	#content form div{margin-top:10px; color:#999; position:relative;}
+	#content img{border-radius:3px;}
+	#avatars{top:0; left:172px; position:absolute;}
+	#avatars img{width:30px; height:30px; opacity:0.5; filter:alpha(opacity=50); cursor:pointer;}
+	#avatars img.hover,#avatars img.current{width:28px; height:28px; opacity:1; filter:alpha(opacity=100);}
+	#avatars img.hover{border:1px #008000 solid;}
+	#avatars img.current{border:1px #05a solid; }
+	#sendBtn{margin-left:10px; width:112px; height:30px; border:0; cursor:pointer; background:url(../images/btn.png) no-repeat;}
+	#sendBtn.hover{background-position:0 -30px;}
+	#content form .maxNum{padding:0 5px; font:26px/30px Georgia, Tahoma, Arial;}
+	#content .list{padding:10px;}
+	#content .list h3{height:33px; border:1px solid #dee4e7; font-size:14px; font-weight:100; background:#e3eaec; position:relative;}
+	#content .list h3 span{display:inline-block; padding:0 15px; left:6px; top:6px; line-height:28px; background:#fff; position:absolute;}
+	#content .list ul{zoom:1; overflow:hidden;}
+	#content .list ul li{padding:10px 0; border-bottom:1px #d8d8d8 dashed; background:#fff; overflow:hidden; float:left;}
+	#content .list ul li.hover{background:#f5f5f5;}
+	#content .list .userPic{display:inline; margin-left:10px; width:50px; height:50px; border:1px #ccc solid; border-radius:3px; float:left;}
+	#content .list .content{margin-left:10px; padding-right:8px; width:400px; font-size:14px; font-family:arial; word-wrap:break-word; float:left;}
+	#content .list .userName{display:inline; padding-right:5px;}
+	#content .list .userName a{color:#2b4a78;}
+	#content .list .msgInfo{display:inline; word-wrap:break-word;}
+	#content .list .times{margin-top:5px; font:12px/18px arial; color:#889db6; overflow:hidden; zoom:1;}
+	#content .list .times span{float:left;}
+	#content .list .times a{display:none; color:#889db6; float:right;}
+	#content .list ul li.hover .times a{display:block;}
+	.tr{overflow:hidden; zoom:1;}
+	.tr p{line-height:30px; float:right;}
+	.tr *{float:left;}
+#main #sideBar{width:280px;}

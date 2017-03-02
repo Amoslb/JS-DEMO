@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0}
+ul{list-style-type: none;}
+.box{width:789px;
+	height:auto;
+	margin: 0 auto;
+}
+.list_box{margin:0 auto;
+	cursor: pointer;
+width:700px; height: 42px;
+border-bottom: #ccc solid 1px;}
+.list{float:right;padding-top:10px}
+.list_box .list .list_1{height:26px;width:30px;float:left;background: url(../img/listype-icon.png) 0 -26px;
+	;}
+.list_box .list .list_2{width:30px;height: 26px;float:left;background: url(../img/listype-icon.png)-30px -26px;}
+.changelist .list-1-o{
+	height:240px;
+	width: 240px;
+	border: 1px solid #ccc;
+	float:left;
+	margin:0 0 20px 20px;
+}
+.changelist .list-2-v{
+	height:170px;
+	
+}
